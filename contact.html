@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Zenchmark</title>
+  <meta name="description" content="Contact Zenchmark for sales, support, or general inquiries. We're here to help you get connected." />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="/Zenchmark/index.html" aria-label="Zenchmark Home">
+        <img src="logo.svg" alt="Zenchmark" class="logo" />
+        <span class="brand-text">Zenchmark</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="bundle.html">Bundle</a>
+        <a href="about.html">About</a>
+        <a class="btn btn-primary" href="contact.html">Contact</a>
+      </nav>
+      <a class="phone" href="tel:+18557520645">(855) 752-0645</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <h1>Contact Zenchmark</h1>
+        <p>Need help choosing a plan or upgrading service? Call us or send a message below.</p>
+      </div>
+    </section>
+    <section class="features container">
+      <h2 style="text-align:center;">How to Reach Us</h2>
+      <div class="grid-2">
+        <div class="card">
+          <span style="display:inline-block;vertical-align:middle;margin-bottom:8px;">
+            <svg width="32" height="32" fill="none" viewBox="0 0 32 32"><path d="M16 29c7.2 0 13-5.8 13-13S23.2 3 16 3 3 8.8 3 16c0 2.2.6 4.3 1.7 6.2l-1.2 4.6a1 1 0 0 0 1.2 1.2l4.6-1.2A13 13 0 0 0 16 29Z" stroke="#28f0b3" stroke-width="2" fill="none"/><path d="M11 13a5 5 0 0 1 10 0c0 2.8-2.2 5-5 5s-5-2.2-5-5Z" stroke="#5ae3ff" stroke-width="2" fill="none"/></svg>
+          </span>
+          <h3>Call Us</h3>
+          <p><a class="phone-big" href="tel:+18557520645">(855) 752-0645</a></p>
+          <p>Sales & Support: Mon–Sat 8am–8pm</p>
+          <p>For emergencies, call any time.</p>
+        </div>
+        <div class="card">
+          <span style="display:inline-block;vertical-align:middle;margin-bottom:8px;">
+            <svg width="32" height="32" fill="none" viewBox="0 0 32 32"><rect x="6" y="10" width="20" height="12" rx="2" stroke="#7b5dff" stroke-width="2"/><path d="M16 22v4" stroke="#7b5dff" stroke-width="2" stroke-linecap="round"/><path d="M12 6l4 4 4-4" stroke="#7b5dff" stroke-width="2" stroke-linecap="round"/></svg>
+          </span>
+          <h3>Send a Message</h3>
+          <form class="contact-form" onsubmit="return Zenchmark.submitForm(event)">
+            <label>
+              Name
+              <input type="text" name="name" required />
+            </label>
+            <label>
+              Email
+              <input type="email" name="email" required />
+            </label>
+            <label>
+              Phone
+              <input type="tel" name="phone" />
+            </label>
+            <label>
+              Message
+              <textarea name="message" rows="5" required></textarea>
+            </label>
+            <label class="checkbox" style="display:flex;align-items:center;gap:4px;justify-content:flex-start;text-align:left;">
+              <input type="checkbox" required />
+              <span>I agree to the <a href="/Zenchmark/terms-conditions.html">Terms</a> and <a href="/Zenchmark/privacy-policy.html">Privacy Policy</a>.</span>
+            </label>
+            <button class="btn btn-primary" type="submit">Send</button>
+            <p id="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+    <section class="faq">
+      <div class="container faq-inner">
+        <h2>Frequently Asked Questions</h2>
+        <div class="grid-2">
+          <div class="card">
+            <span style="display:inline-block;vertical-align:middle;margin-bottom:8px;">
+              <svg width="32" height="32" fill="none" viewBox="0 0 32 32"><circle cx="16" cy="16" r="14" stroke="#5ae3ff" stroke-width="2"/><text x="16" y="22" text-anchor="middle" font-size="18" fill="#5ae3ff">?</text></svg>
+            </span>
+            <h4>How quickly will I get a response?</h4>
+            <p>We respond to most messages within 1 business day.</p>
+          </div>
+          <div class="card">
+            <span style="display:inline-block;vertical-align:middle;margin-bottom:8px;">
+              <svg width="32" height="32" fill="none" viewBox="0 0 32 32"><circle cx="16" cy="16" r="14" stroke="#7b5dff" stroke-width="2"/><text x="16" y="22" text-anchor="middle" font-size="18" fill="#7b5dff">?</text></svg>
+            </span>
+            <h4>Can I call for emergencies?</h4>
+            <p>Yes, our phone line is available 24/7 for urgent support.</p>
+          </div>
+          <div class="card">
+            <span style="display:inline-block;vertical-align:middle;margin-bottom:8px;">
+              <svg width="32" height="32" fill="none" viewBox="0 0 32 32"><circle cx="16" cy="16" r="14" stroke="#28f0b3" stroke-width="2"/><text x="16" y="22" text-anchor="middle" font-size="18" fill="#28f0b3">?</text></svg>
+            </span>
+            <h4>Is my information safe?</h4>
+            <p>We never share your data. See our <a href="/Zenchmark/privacy-policy.html">Privacy Policy</a>.</p>
+          </div>
+          <div class="card">
+            <span style="display:inline-block;vertical-align:middle;margin-bottom:8px;">
+              <svg width="32" height="32" fill="none" viewBox="0 0 32 32"><circle cx="16" cy="16" r="14" stroke="#5ae3ff" stroke-width="2"/><text x="16" y="22" text-anchor="middle" font-size="18" fill="#5ae3ff">?</text></svg>
+            </span>
+            <h4>Can I request a callback?</h4>
+            <p>Absolutely! Use the form or call us to request a callback at your convenience.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <img src="logo.svg" alt="Zenchmark" class="logo small" />
+        <p>Set the new benchmark for connectivity. Internet and cable made simple.</p>
+        <a class="phone" href="tel:+18557520645">(855) 752-0645</a>
+      </div>
+      <nav>
+        <h4>Company</h4>
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="bundle.html">Bundle</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <nav>
+        <h4>Legal</h4>
+        <a href="/Zenchmark/privacy-policy.html">Privacy Policy</a>
+        <a href="/Zenchmark/terms-conditions.html">Terms & Conditions</a>
+        <a href="/Zenchmark/refund-policy.html">Refund Policy</a>
+      </nav>
+    </div>
+    <div class="container subfooter">
+      <p>© <span id="year"></span> Zenchmark. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
