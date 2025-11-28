@@ -13,7 +13,6 @@
     <div class="container header-inner">
       <a class="brand" href="/Zenchmark/index.html" aria-label="Zenchmark Home">
         <img src="logo.svg" alt="Zenchmark" class="logo" />
-        <span class="brand-text">Zenchmark</span>
       </a>
       <nav class="nav">
         <a href="index.html">Home</a>
@@ -28,15 +27,73 @@
   </header>
 
   <main>
-    <section class="hero">
-      <div class="container hero-inner">
-        <h1>Our Services</h1>
-        <p>We design our services to set a higher standard a Zenchmark for speed, reliability, and clarity.</p>
+    <!-- Animated Hero Section -->
+    <section class="services-hero">
+      <div class="container">
+        <div class="services-hero-content animate-on-scroll" data-animation="fadeInUp">
+          <span class="hero-badge">What We Offer</span>
+          <h1 class="gradient-text">Our Services</h1>
+          <p class="hero-subtitle">We design our services to set a higher standard — a Zenchmark — for speed, reliability, and clarity.</p>
+        </div>
       </div>
     </section>
 
+    <!-- Services Zigzag Section -->
+    <section class="services-zigzag">
+      <div class="container">
+        <div class="service-row animate-on-scroll" data-animation="fadeInUp">
+          <div class="service-content">
+            <span class="service-badge">For Home</span>
+            <h2>Residential Internet</h2>
+            <ul class="service-features">
+              <li><svg width="16" height="16" fill="none" viewBox="0 0 20 20"><path d="M5 10l3 3 7-7" stroke="#28f0b3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Up to 1 Gbps download / 100 Mbps upload</li>
+              <li><svg width="16" height="16" fill="none" viewBox="0 0 20 20"><path d="M5 10l3 3 7-7" stroke="#28f0b3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Unlimited data, no throttling</li>
+              <li><svg width="16" height="16" fill="none" viewBox="0 0 20 20"><path d="M5 10l3 3 7-7" stroke="#28f0b3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Wi‑Fi 6 router included</li>
+            </ul>
+            <a class="btn btn-primary" href="/Zenchmark/pricing.html#internet">See Internet Plans</a>
+          </div>
+          <div class="service-image">
+            <img src="https://images.unsplash.com/photo-1558346490-a72e53ae2d4f?w=600&q=80" alt="Residential Internet">
+          </div>
+        </div>
+
+        <div class="service-row reverse animate-on-scroll" data-animation="fadeInUp">
+          <div class="service-content">
+            <span class="service-badge">For Business</span>
+            <h2>Business Internet</h2>
+            <ul class="service-features">
+              <li><svg width="16" height="16" fill="none" viewBox="0 0 20 20"><path d="M5 10l3 3 7-7" stroke="#28f0b3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Symmetric speeds up to 1 Gbps</li>
+              <li><svg width="16" height="16" fill="none" viewBox="0 0 20 20"><path d="M5 10l3 3 7-7" stroke="#28f0b3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Static IP options</li>
+              <li><svg width="16" height="16" fill="none" viewBox="0 0 20 20"><path d="M5 10l3 3 7-7" stroke="#28f0b3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Priority support and SLAs</li>
+            </ul>
+            <a class="btn btn-primary" href="/Zenchmark/contact.html">Get a Quote</a>
+          </div>
+          <div class="service-image">
+            <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=600&q=80" alt="Business Internet">
+          </div>
+        </div>
+
+        <div class="service-row animate-on-scroll" data-animation="fadeInUp">
+          <div class="service-content">
+            <span class="service-badge">Entertainment</span>
+            <h2>Cable TV</h2>
+            <ul class="service-features">
+              <li><svg width="16" height="16" fill="none" viewBox="0 0 20 20"><path d="M5 10l3 3 7-7" stroke="#28f0b3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Flexible channel packs</li>
+              <li><svg width="16" height="16" fill="none" viewBox="0 0 20 20"><path d="M5 10l3 3 7-7" stroke="#28f0b3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Cloud DVR & 4K lineup</li>
+              <li><svg width="16" height="16" fill="none" viewBox="0 0 20 20"><path d="M5 10l3 3 7-7" stroke="#28f0b3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> No hidden fees</li>
+            </ul>
+            <a class="btn btn-primary" href="/Zenchmark/pricing.html#cable">See TV Plans</a>
+          </div>
+          <div class="service-image">
+            <img src="https://images.unsplash.com/photo-1593784991095-a205069470b6?w=600&q=80" alt="Cable TV">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Additional Services Grid -->
     <section class="features container">
-      <h2 style="text-align:center;">Our Core Services</h2>
+      <h2 style="text-align:center;">Additional Services</h2>
       <div class="grid-3">
         <div class="card">
           <span style="display:inline-block;vertical-align:middle;margin-bottom:8px;">

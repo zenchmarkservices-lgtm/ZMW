@@ -9,12 +9,11 @@
   <link rel="preload" as="image" href="logo.svg" />
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
+<body class="animated-layout">
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="/Zenchmark/index.html" aria-label="Zenchmark Home">
         <img src="logo.svg" alt="Zenchmark" class="logo" />
-        <span class="brand-text">Zenchmark</span>
       </a>
       <nav class="nav">
         <a href="index.html">Home</a>
@@ -32,158 +31,669 @@
   </header>
 
   <main>
-    <section class="hero">
-      <div class="hero-bg" style="position:relative;overflow:hidden;">
-        <video autoplay muted loop playsinline style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;z-index:0;">
-          <source src="stream_home_banner.mp4" type="video/mp4" />
-        </video>
-        <div class="container hero-inner" style="position:relative;z-index:1;">
-          <h1>Benchmark A to Z</h1>
-          <p>Next‑gen internet and cable built for homes and businesses that won’t settle. Simple plans, real support, no surprises.</p>
-          <div class="cta">
-            <a class="btn btn-primary" href="/Zenchmark/pricing.html">View Plans</a>
-            <a class="btn btn-secondary" href="/Zenchmark/services.html">See Services</a>
-            <a class="btn btn-accent" href="tel:+18557520645">Call for Service</a>
+    <section class="hero-split">
+      <div class="hero-split-container">
+        <!-- Left Side: Content -->
+        <div class="hero-content-side">
+          <div class="hero-content-wrapper">
+            <div class="hero-badge animate-in">
+              <span class="badge-dot"></span>
+              <span>The Future of Connectivity</span>
+            </div>
+            <h1 class="hero-title-split">
+              <span class="hero-title-line" data-text="Benchmark">Benchmark</span>
+              <span class="hero-title-line gradient-text" data-text="A to Z">A to Z</span>
+            </h1>
+            <p class="hero-description">Next‑generation internet and cable services designed for those who refuse to compromise. Experience lightning-fast speeds, crystal-clear entertainment, and support that actually cares.</p>
+            
+            <div class="hero-features-inline">
+              <div class="feature-pill">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M17 8l-6 6-4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                No Contracts
+              </div>
+              <div class="feature-pill">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M17 8l-6 6-4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                Transparent Pricing
+              </div>
+              <div class="feature-pill">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M17 8l-6 6-4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                99.9% Uptime
+              </div>
+            </div>
+
+            <div class="hero-cta-group">
+              <a class="btn btn-hero-primary" href="/Zenchmark/pricing.html">
+                <span>View Plans</span>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4 10h12m-6-6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+              </a>
+              <a class="btn btn-hero-secondary" href="tel:+18557520645">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M3 3l3 3m0 0l-3 3m3-3h12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                <span>Call Now</span>
+              </a>
+            </div>
+
+            <div class="hero-stats-row">
+              <div class="hero-stat">
+                <div class="stat-value">1000+</div>
+                <div class="stat-label">Happy Customers</div>
+              </div>
+              <div class="hero-stat">
+                <div class="stat-value">99.9%</div>
+                <div class="stat-label">Network Uptime</div>
+              </div>
+              <div class="hero-stat">
+                <div class="stat-value">24/7</div>
+                <div class="stat-label">Support Available</div>
+              </div>
+            </div>
           </div>
-          <ul class="trust">
-            <li>No annual contracts</li>
-            <li>Transparent pricing</li>
-            <li>99.9% network reliability</li>
-          </ul>
+        </div>
+
+        <!-- Right Side: Visual -->
+        <div class="hero-visual-side">
+          <div class="hero-video-wrapper">
+            <video autoplay muted loop playsinline class="hero-video">
+              <source src="stream_home_banner.mp4" type="video/mp4" />
+            </video>
+            <div class="hero-overlay-gradient"></div>
+          </div>
+          
+          <!-- Floating Cards -->
+          <div class="floating-info-card card-1">
+            <div class="info-card-icon">⚡</div>
+            <div class="info-card-content">
+              <div class="info-card-value">1 Gbps</div>
+              <div class="info-card-label">Max Speed</div>
+            </div>
+          </div>
+          
+          <div class="floating-info-card card-2">
+            <div class="info-card-icon">📺</div>
+            <div class="info-card-content">
+              <div class="info-card-value">200+</div>
+              <div class="info-card-label">HD Channels</div>
+            </div>
+          </div>
+          
+          <div class="floating-info-card card-3">
+            <div class="info-card-icon">💰</div>
+            <div class="info-card-content">
+              <div class="info-card-value">$0</div>
+              <div class="info-card-label">Hidden Fees</div>
+            </div>
+          </div>
+
+          <!-- Animated Particles -->
+          <div class="hero-particles">
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Scroll Indicator -->
+      <div class="scroll-indicator">
+        <div class="scroll-text">Scroll to Explore</div>
+        <div class="scroll-arrow">↓</div>
+      </div>
+    </section>
+
+    <!-- Services Showcase Section with Images - Zigzag Layout -->
+    <section class="services-showcase animate-section" data-animation="fade-up">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="animate-text">Premium Services That Deliver</h2>
+          <div class="animated-underline"></div>
+          <p class="section-subtitle">Experience excellence across every connection</p>
+        </div>
+
+        <!-- Service 1 - Left aligned -->
+        <div class="service-zigzag service-left" data-delay="0">
+          <div class="service-image">
+            <img src="https://images.unsplash.com/photo-1558346490-a72e53ae2d4f?w=800&q=80" alt="Fiber-Fast Internet" class="zoom-image" />
+            <div class="image-overlay"></div>
+          </div>
+          <div class="service-content">
+            <div class="service-badge">High Speed</div>
+            <h3>Fiber-Fast Internet</h3>
+            <p>Experience blazing-fast gigabit speeds with ultra-low latency. Perfect for streaming 4K content, online gaming, video conferencing, and powering smart home devices simultaneously without any slowdown.</p>
+            <ul class="service-features">
+              <li><span class="check-icon">✓</span> Up to 1000 Mbps download speeds</li>
+              <li><span class="check-icon">✓</span> Unlimited data - no caps or throttling</li>
+              <li><span class="check-icon">✓</span> 99.9% uptime guarantee</li>
+            </ul>
+            <a href="/Zenchmark/pricing.html#internet" class="btn btn-primary">View Internet Plans</a>
+          </div>
+        </div>
+
+        <!-- Service 2 - Right aligned -->
+        <div class="service-zigzag service-right" data-delay="100">
+          <div class="service-content">
+            <div class="service-badge">Entertainment</div>
+            <h3>Smart Cable TV</h3>
+            <p>Get access to 200+ premium channels including sports, movies, news, and entertainment. Enjoy crystal-clear 4K resolution, cloud DVR with unlimited storage, and stream on any device, anywhere.</p>
+            <ul class="service-features">
+              <li><span class="check-icon">✓</span> 200+ HD & 4K channels</li>
+              <li><span class="check-icon">✓</span> Cloud DVR with unlimited storage</li>
+              <li><span class="check-icon">✓</span> Stream on 5 devices simultaneously</li>
+            </ul>
+            <a href="/Zenchmark/pricing.html#cable" class="btn btn-primary">Explore TV Packages</a>
+          </div>
+          <div class="service-image">
+            <img src="https://images.unsplash.com/photo-1593784991095-a205069470b6?w=800&q=80" alt="Smart Cable TV" class="zoom-image" />
+            <div class="image-overlay"></div>
+          </div>
+        </div>
+
+        <!-- Service 3 - Left aligned -->
+        <div class="service-zigzag service-left" data-delay="200">
+          <div class="service-image">
+            <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=800&q=80" alt="Professional Installation" class="zoom-image" />
+            <div class="image-overlay"></div>
+          </div>
+          <div class="service-content">
+            <div class="service-badge">Professional</div>
+            <h3>Expert Installation</h3>
+            <p>Our certified technicians ensure flawless setup of your internet and cable services. We handle everything from equipment installation to network optimization, ensuring peak performance from day one.</p>
+            <ul class="service-features">
+              <li><span class="check-icon">✓</span> Certified expert technicians</li>
+              <li><span class="check-icon">✓</span> Same-day installation available</li>
+              <li><span class="check-icon">✓</span> Free network optimization</li>
+            </ul>
+            <a href="/Zenchmark/services.html#installation" class="btn btn-primary">Schedule Installation</a>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="features container">
-      <div class="grid-3">
-        <div class="card">
-          <span style="display:inline-block;vertical-align:middle;margin-bottom:8px;"> <!-- Internet Icon -->
-            <svg width="32" height="32" fill="none" viewBox="0 0 32 32"><circle cx="16" cy="16" r="15" stroke="#5ae3ff" stroke-width="2"/><path d="M8 20c2-2.5 6-2.5 8 0" stroke="#5ae3ff" stroke-width="2" stroke-linecap="round"/><circle cx="16" cy="13" r="2" fill="#5ae3ff"/></svg>
-          </span>
-          <h3>Fiber‑Fast Internet</h3>
-          <p>Up to gigabit speeds with ultra‑low latency for streaming, gaming, and remote work.</p>
-          <p><a href="/Zenchmark/pricing.html#internet">See internet plans →</a></p>
-        </div>
-        <div class="card">
-          <span style="display:inline-block;vertical-align:middle;margin-bottom:8px;"> <!-- TV Icon -->
-            <svg width="32" height="32" fill="none" viewBox="0 0 32 32"><rect x="6" y="10" width="20" height="12" rx="2" stroke="#7b5dff" stroke-width="2"/><path d="M16 22v4" stroke="#7b5dff" stroke-width="2" stroke-linecap="round"/><path d="M12 6l4 4 4-4" stroke="#7b5dff" stroke-width="2" stroke-linecap="round"/></svg>
-          </span>
-          <h3>Smart Cable TV</h3>
-          <p>All the channels you love with cloud DVR and 4K support, bundled and flexible.</p>
-          <p><a href="/Zenchmark/pricing.html#cable">Explore TV packages →</a></p>
-        </div>
-        <div class="card">
-          <span style="display:inline-block;vertical-align:middle;margin-bottom:8px;"> <!-- Install Icon -->
-            <svg width="32" height="32" fill="none" viewBox="0 0 32 32"><rect x="8" y="8" width="16" height="16" rx="4" stroke="#28f0b3" stroke-width="2"/><path d="M16 12v8" stroke="#28f0b3" stroke-width="2" stroke-linecap="round"/><path d="M12 16h8" stroke="#28f0b3" stroke-width="2" stroke-linecap="round"/></svg>
-          </span>
-          <h3>Pro Installation</h3>
-          <p>Certified technicians set you up right — on time, clean, and optimized.</p>
-          <p><a href="/Zenchmark/services.html#installation">Learn about installation →</a></p>
-        </div>
+    <section class="highlight parallax-section animate-section" data-animation="zoom-in">
+      <div class="floating-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
       </div>
-    </section>
-
-    <section class="highlight">
       <div class="container highlight-inner">
-        <h2>Bundles that beat the benchmark</h2>
-        <p>Combine internet + cable and save more. One bill. One support line. Zero compromise.</p>
-        <a class="btn btn-primary" href="pricing.html#bundle-plans">Compare Bundles</a>
+        <h2 class="glitch-text">Bundles that beat the benchmark</h2>
+        <p class="fade-in-text">Combine internet + cable and save more. One bill. One support line. Zero compromise.</p>
+        <div class="stats-row animate-counters">
+          <div class="stat-item">
+            <span class="stat-number" data-target="99">0</span>%
+            <p>Uptime Guarantee</p>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number" data-target="1000">0</span>+
+            <p>Happy Customers</p>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number" data-target="24">0</span>/7
+            <p>Support Available</p>
+          </div>
+        </div>
+        <a class="btn btn-primary pulse-btn" href="pricing.html#bundle-plans">Compare Bundles</a>
       </div>
     </section>
 
-    <!-- Testimonials Section -->
-    <section class="testimonials">
-      <div class="container testimonials-inner">
-        <h2>What Our Customers Say</h2>
-        <div class="grid-3">
-          <div class="card">
-            <p>“Zenchmark made switching so easy. My internet is faster and my bill is lower!”</p>
-            <span>- Jamie R., Homeowner</span>
+    <!-- Testimonials Section - Stunning Cards Layout -->
+    <section class="testimonials-modern animate-section" data-animation="fade-up">
+      <div class="container">
+        <div class="section-header-centered">
+          <h2 class="animate-text">Loved By Thousands</h2>
+          <div class="animated-underline"></div>
+          <p class="section-subtitle">Real stories from real customers who've made the switch</p>
+        </div>
+        
+        <div class="testimonials-masonry">
+          <!-- Testimonial 1 - Large Featured -->
+          <div class="testimonial-modern featured" data-delay="0">
+            <div class="testimonial-header">
+              <div class="customer-avatar">JR</div>
+              <div class="customer-info">
+                <div class="customer-name">Jamie Rivera</div>
+                <div class="customer-role">Homeowner • San Diego, CA</div>
+              </div>
+              <div class="rating-badge">
+                <span class="rating-stars">★★★★★</span>
+                <span class="rating-text">5.0</span>
+              </div>
+            </div>
+            <div class="testimonial-content">
+              <svg class="quote-icon" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                <path d="M10 20c0-5.5 4.5-10 10-10v5c-2.8 0-5 2.2-5 5h5v10H10V20zm20 0c0-5.5 4.5-10 10-10v5c-2.8 0-5 2.2-5 5h5v10H30V20z" fill="currentColor" opacity="0.1"/>
+              </svg>
+              <p>"Switching to Zenchmark was the best decision for our home. The fiber internet is blazing fast - we can all work, stream, and game simultaneously without any lag. Plus, our bill is actually lower than what we were paying before!"</p>
+            </div>
+            <div class="testimonial-footer">
+              <span class="verified-badge">✓ Verified Customer</span>
+              <span class="testimonial-date">2 weeks ago</span>
+            </div>
           </div>
-          <div class="card">
-            <p>“The installation was quick and professional. Streaming 4K is flawless.”</p>
-            <span>- Alex T., Gamer</span>
+
+          <!-- Testimonial 2 - Standard -->
+          <div class="testimonial-modern" data-delay="100">
+            <div class="testimonial-header">
+              <div class="customer-avatar">AT</div>
+              <div class="customer-info">
+                <div class="customer-name">Alex Thompson</div>
+                <div class="customer-role">Gamer & Streamer</div>
+              </div>
+              <div class="rating-badge">
+                <span class="rating-stars">★★★★★</span>
+              </div>
+            </div>
+            <div class="testimonial-content">
+              <p>"As a competitive gamer, low latency is crucial. Zenchmark's fiber delivers consistently low ping times. The installation was quick and professional - tech arrived on time and had everything set up in under an hour. Streaming 4K is flawless!"</p>
+            </div>
+            <div class="testimonial-footer">
+              <span class="verified-badge">✓ Verified</span>
+            </div>
           </div>
-          <div class="card">
-            <p>“One call for support and my issue was fixed in minutes. Highly recommend!”</p>
-            <span>- Priya S., Small Business Owner</span>
+
+          <!-- Testimonial 3 - Standard -->
+          <div class="testimonial-modern" data-delay="200">
+            <div class="testimonial-header">
+              <div class="customer-avatar">PS</div>
+              <div class="customer-info">
+                <div class="customer-name">Priya Shah</div>
+                <div class="customer-role">Small Business Owner</div>
+              </div>
+              <div class="rating-badge">
+                <span class="rating-stars">★★★★★</span>
+              </div>
+            </div>
+            <div class="testimonial-content">
+              <p>"The 24/7 support is incredible. I had a question about my business plan at 10 PM and got through to a real person immediately who resolved my issue in minutes. No more waiting on hold or dealing with automated systems!"</p>
+            </div>
+            <div class="testimonial-footer">
+              <span class="verified-badge">✓ Verified</span>
+            </div>
+          </div>
+
+          <!-- Testimonial 4 - Compact -->
+          <div class="testimonial-modern compact" data-delay="300">
+            <div class="testimonial-header">
+              <div class="customer-avatar mini">MK</div>
+              <div class="customer-info">
+                <div class="customer-name">Mike Kim</div>
+                <div class="rating-stars">★★★★★</div>
+              </div>
+            </div>
+            <div class="testimonial-content">
+              <p>"No contracts, transparent pricing, and speeds that actually match what they advertise. Refreshing!"</p>
+            </div>
+          </div>
+
+          <!-- Testimonial 5 - Compact -->
+          <div class="testimonial-modern compact" data-delay="400">
+            <div class="testimonial-header">
+              <div class="customer-avatar mini">SL</div>
+              <div class="customer-info">
+                <div class="customer-name">Sarah Lopez</div>
+                <div class="rating-stars">★★★★★</div>
+              </div>
+            </div>
+            <div class="testimonial-content">
+              <p>"Bundle discount saved me $40/month compared to my old provider. Same great service, much better price!"</p>
+            </div>
+          </div>
+
+          <!-- Testimonial 6 - Compact -->
+          <div class="testimonial-modern compact" data-delay="500">
+            <div class="testimonial-header">
+              <div class="customer-avatar mini">DW</div>
+              <div class="customer-info">
+                <div class="customer-name">David Wilson</div>
+                <div class="rating-stars">★★★★★</div>
+              </div>
+            </div>
+            <div class="testimonial-content">
+              <p>"Finally, an ISP that treats customers like people, not account numbers. Highly recommend!"</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Trust Indicators -->
+        <div class="trust-indicators">
+          <div class="trust-item">
+            <div class="trust-value">4.9/5</div>
+            <div class="trust-label">Average Rating</div>
+          </div>
+          <div class="trust-item">
+            <div class="trust-value">98%</div>
+            <div class="trust-label">Would Recommend</div>
+          </div>
+          <div class="trust-item">
+            <div class="trust-value">1000+</div>
+            <div class="trust-label">5-Star Reviews</div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Coverage Map Section -->
-    <!-- Why Choose Zenchmark Section -->
-    <section class="why-zench">
-      <div class="container why-zench-inner">
-        <h2>Why Choose Zenchmark?</h2>
-        <div class="grid-3">
-          <div class="card">
-            <span style="display:inline-block;vertical-align:middle;margin-bottom:8px;"> <!-- Pricing Icon -->
-              <svg width="32" height="32" fill="none" viewBox="0 0 32 32"><rect x="8" y="8" width="16" height="16" rx="4" stroke="#5ae3ff" stroke-width="2"/><text x="16" y="22" text-anchor="middle" font-size="14" fill="#5ae3ff">$</text></svg>
-            </span>
+    <!-- Why Choose Zenchmark Section - Modern Grid Layout -->
+    <section class="why-zench-modern animate-section" data-animation="fade-up">
+      <div class="container">
+        <h2 class="animate-text">Why Zenchmark Stands Out</h2>
+        <div class="animated-underline"></div>
+        <p class="section-subtitle">Setting the benchmark for excellence in connectivity</p>
+        
+        <div class="benefits-grid">
+          <div class="benefit-card" data-delay="0">
+            <div class="benefit-icon-large">
+              <svg width="64" height="64" fill="none" viewBox="0 0 64 64">
+                <circle cx="32" cy="32" r="30" stroke="url(#gradient1)" stroke-width="3"/>
+                <path d="M20 36c4-5 12-5 16 0" stroke="url(#gradient1)" stroke-width="3" stroke-linecap="round"/>
+                <circle cx="32" cy="26" r="4" fill="url(#gradient1)"/>
+                <defs>
+                  <linearGradient id="gradient1" x1="0" y1="0" x2="64" y2="64">
+                    <stop offset="0%" stop-color="#5ae3ff"/>
+                    <stop offset="100%" stop-color="#7b5dff"/>
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+            <h3>Lightning Fast Speeds</h3>
+            <p>Industry-leading fiber-optic technology delivers consistent gigabit speeds for seamless connectivity.</p>
+            <div class="benefit-stats">
+              <div class="stat">1 Gbps</div>
+              <div class="stat-label">Max Speed</div>
+            </div>
+          </div>
+
+          <div class="benefit-card" data-delay="100">
+            <div class="benefit-icon-large">
+              <svg width="64" height="64" fill="none" viewBox="0 0 64 64">
+                <rect x="16" y="16" width="32" height="32" rx="8" stroke="url(#gradient2)" stroke-width="3"/>
+                <text x="32" y="44" text-anchor="middle" font-size="28" fill="url(#gradient2)">$</text>
+                <defs>
+                  <linearGradient id="gradient2" x1="0" y1="0" x2="64" y2="64">
+                    <stop offset="0%" stop-color="#28f0b3"/>
+                    <stop offset="100%" stop-color="#5ae3ff"/>
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
             <h3>Transparent Pricing</h3>
-            <p>No hidden fees, no surprises. What you see is what you pay.</p>
+            <p>Clear, straightforward pricing with no hidden fees, surprise charges, or annual contracts required.</p>
+            <div class="benefit-stats">
+              <div class="stat">0%</div>
+              <div class="stat-label">Hidden Fees</div>
+            </div>
           </div>
-          <div class="card">
-            <span style="display:inline-block;vertical-align:middle;margin-bottom:8px;"> <!-- Support Icon -->
-              <svg width="32" height="32" fill="none" viewBox="0 0 32 32"><circle cx="16" cy="16" r="14" stroke="#7b5dff" stroke-width="2"/><path d="M16 20v2" stroke="#7b5dff" stroke-width="2" stroke-linecap="round"/><circle cx="16" cy="14" r="4" stroke="#7b5dff" stroke-width="2"/></svg>
-            </span>
-            <h3>Real Support</h3>
-            <p>Our team is available 24/7 to help you with any questions or issues.</p>
+
+          <div class="benefit-card" data-delay="200">
+            <div class="benefit-icon-large">
+              <svg width="64" height="64" fill="none" viewBox="0 0 64 64">
+                <circle cx="32" cy="32" r="28" stroke="url(#gradient3)" stroke-width="3"/>
+                <path d="M32 40v4" stroke="url(#gradient3)" stroke-width="3" stroke-linecap="round"/>
+                <circle cx="32" cy="28" r="8" stroke="url(#gradient3)" stroke-width="3"/>
+                <defs>
+                  <linearGradient id="gradient3" x1="0" y1="0" x2="64" y2="64">
+                    <stop offset="0%" stop-color="#7b5dff"/>
+                    <stop offset="100%" stop-color="#ff657a"/>
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+            <h3>24/7 Expert Support</h3>
+            <p>Real humans ready to help anytime. Our support team resolves 95% of issues on the first call.</p>
+            <div class="benefit-stats">
+              <div class="stat">24/7</div>
+              <div class="stat-label">Available</div>
+            </div>
           </div>
-          <div class="card">
-            <span style="display:inline-block;vertical-align:middle;margin-bottom:8px;"> <!-- Flexible Icon -->
-              <svg width="32" height="32" fill="none" viewBox="0 0 32 32"><rect x="6" y="12" width="20" height="8" rx="4" stroke="#28f0b3" stroke-width="2"/><path d="M10 20v2a2 2 0 002 2h8a2 2 0 002-2v-2" stroke="#28f0b3" stroke-width="2"/></svg>
-            </span>
+
+          <div class="benefit-card" data-delay="300">
+            <div class="benefit-icon-large">
+              <svg width="64" height="64" fill="none" viewBox="0 0 64 64">
+                <path d="M12 28h40M32 16v24M20 40l12-12 12 12" stroke="url(#gradient4)" stroke-width="3" stroke-linecap="round"/>
+                <defs>
+                  <linearGradient id="gradient4" x1="0" y1="0" x2="64" y2="64">
+                    <stop offset="0%" stop-color="#28f0b3"/>
+                    <stop offset="100%" stop-color="#7b5dff"/>
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
             <h3>Flexible Plans</h3>
-            <p>Upgrade, downgrade, or customize your plan anytime to fit your needs.</p>
+            <p>Easily upgrade, downgrade, or customize your service plan to match your changing needs.</p>
+            <div class="benefit-stats">
+              <div class="stat">∞</div>
+              <div class="stat-label">Flexibility</div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- How It Works Section -->
-    <section class="how-it-works">
-      <div class="container how-it-works-inner">
-        <h2>How Zenchmark Works</h2>
-        <div class="grid-3">
-          <div class="card">
-            <h3>1. Choose Your Plan</h3>
-            <p>Pick the internet or cable bundle that fits your needs. No hidden fees.</p>
+    <!-- How It Works Section - Modern Interactive Cards -->
+    <section class="how-it-works-modern animate-section" data-animation="slide-up">
+      <div class="container">
+        <h2 class="animate-text">Get Connected in 3 Simple Steps</h2>
+        <div class="animated-underline"></div>
+        <p class="section-subtitle">From selection to installation, we make it effortless</p>
+        
+        <div class="steps-modern">
+          <div class="step-modern" data-step="1">
+            <div class="step-visual">
+              <div class="step-circle">
+                <span class="step-num">1</span>
+              </div>
+              <div class="step-connector"></div>
+            </div>
+            <div class="step-content-modern">
+              <div class="step-image-wrapper">
+                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&q=80" alt="Choose Your Plan" class="step-img" />
+                <div class="step-overlay">
+                  <div class="overlay-icon">📋</div>
+                </div>
+              </div>
+              <div class="step-info">
+                <h3>Choose Your Perfect Plan</h3>
+                <p>Browse our flexible internet and cable options. Compare speeds, channels, and pricing to find the perfect match for your home or business. No contracts, no commitments.</p>
+                <ul class="step-highlights">
+                  <li>Transparent pricing calculator</li>
+                  <li>Bundle discounts available</li>
+                  <li>Customizable packages</li>
+                </ul>
+              </div>
+            </div>
           </div>
-          <div class="card">
-            <h3>2. Schedule Installation</h3>
-            <p>Our certified technicians set up your service at a time that works for you.</p>
+
+          <div class="step-modern" data-step="2">
+            <div class="step-visual">
+              <div class="step-circle">
+                <span class="step-num">2</span>
+              </div>
+              <div class="step-connector"></div>
+            </div>
+            <div class="step-content-modern">
+              <div class="step-image-wrapper">
+                <img src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?w=600&q=80" alt="Schedule Installation" class="step-img" />
+                <div class="step-overlay">
+                  <div class="overlay-icon">📅</div>
+                </div>
+              </div>
+              <div class="step-info">
+                <h3>Schedule Installation</h3>
+                <p>Pick a time that works for you - including evenings and weekends. Our certified technicians arrive on time, set up your equipment professionally, and optimize your network.</p>
+                <ul class="step-highlights">
+                  <li>Same-day installation available</li>
+                  <li>2-hour appointment windows</li>
+                  <li>Professional setup included</li>
+                </ul>
+              </div>
+            </div>
           </div>
-          <div class="card">
-            <h3>3. Enjoy & Support</h3>
-            <p>Experience blazing speeds and friendly support whenever you need it.</p>
+
+          <div class="step-modern" data-step="3">
+            <div class="step-visual">
+              <div class="step-circle">
+                <span class="step-num">3</span>
+              </div>
+            </div>
+            <div class="step-content-modern">
+              <div class="step-image-wrapper">
+                <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?w=600&q=80" alt="Enjoy Your Service" class="step-img" />
+                <div class="step-overlay">
+                  <div class="overlay-icon">🚀</div>
+                </div>
+              </div>
+              <div class="step-info">
+                <h3>Enjoy & Get Support</h3>
+                <p>Start streaming, gaming, and working at lightning speeds. Need help? Our 24/7 support team is always ready to assist via phone, chat, or email.</p>
+                <ul class="step-highlights">
+                  <li>99.9% uptime guarantee</li>
+                  <li>24/7 customer support</li>
+                  <li>Free tech support for life</li>
+                </ul>
+              </div>
+            </div>
           </div>
+        </div>
+
+        <div class="cta-steps">
+          <a href="/Zenchmark/pricing.html" class="btn btn-primary btn-large">Get Started Now</a>
+          <a href="tel:+18557520645" class="btn btn-secondary btn-large">Call (855) 752-0645</a>
         </div>
       </div>
     </section>
 
-    <!-- FAQ Section -->
-    <section class="faq">
-      <div class="container faq-inner">
-        <h2>Frequently Asked Questions</h2>
-        <div class="grid-2">
-          <div class="card">
-            <h4>Is there a contract?</h4>
-            <p>No annual contracts. Cancel anytime.</p>
+    <!-- FAQ Section - Interactive Accordion -->
+    <section class="faq-modern animate-section" data-animation="fade-up">
+      <div class="container">
+        <div class="faq-grid-layout">
+          <!-- Left Column: Header and CTA -->
+          <div class="faq-sidebar">
+            <div class="faq-sidebar-content">
+              <h2 class="faq-title">Got Questions?<br>We've Got Answers</h2>
+              <p class="faq-description">Find answers to common questions about our services, pricing, installation, and support.</p>
+              
+              <div class="faq-cta-box">
+                <div class="cta-box-icon">💬</div>
+                <div class="cta-box-content">
+                  <h4>Still have questions?</h4>
+                  <p>Our support team is here 24/7</p>
+                  <a href="tel:+18557520645" class="btn btn-primary btn-small">Call (855) 752-0645</a>
+                </div>
+              </div>
+
+              <div class="faq-stats">
+                <div class="faq-stat-item">
+                  <span class="faq-stat-icon">⚡</span>
+                  <span>Instant answers</span>
+                </div>
+                <div class="faq-stat-item">
+                  <span class="faq-stat-icon">👥</span>
+                  <span>Real humans</span>
+                </div>
+                <div class="faq-stat-item">
+                  <span class="faq-stat-icon">✓</span>
+                  <span>No wait times</span>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="card">
-            <h4>Can I keep my current phone number?</h4>
-            <p>Yes, number porting is available for most regions.</p>
-          </div>
-          <div class="card">
-            <h4>What equipment is required?</h4>
-            <p>We provide all necessary equipment during installation.</p>
-          </div>
-          <div class="card">
-            <h4>How do I get support?</h4>
-            <p>Call us or use our online chat for instant help.</p>
+
+          <!-- Right Column: FAQ Accordion -->
+          <div class="faq-accordion">
+            <div class="faq-item" data-delay="0">
+              <button class="faq-question" onclick="toggleFAQ(this)">
+                <span>Is there an annual contract required?</span>
+                <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+              </button>
+              <div class="faq-answer">
+                <p>No, we don't believe in locking you into long-term contracts. All our plans are month-to-month, so you can cancel anytime without penalties or early termination fees. We earn your business every single month.</p>
+              </div>
+            </div>
+
+            <div class="faq-item" data-delay="100">
+              <button class="faq-question" onclick="toggleFAQ(this)">
+                <span>What internet speeds do you offer?</span>
+                <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+              </button>
+              <div class="faq-answer">
+                <p>We offer fiber-optic internet with speeds ranging from 100 Mbps to 1000 Mbps (1 Gigabit). All plans include unlimited data with no throttling or caps. Upload speeds are also significantly faster than traditional cable internet.</p>
+              </div>
+            </div>
+
+            <div class="faq-item" data-delay="200">
+              <button class="faq-question" onclick="toggleFAQ(this)">
+                <span>How long does installation take?</span>
+                <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+              </button>
+              <div class="faq-answer">
+                <p>Professional installation typically takes 1-2 hours. Our certified technicians will set up all equipment, optimize your network, and ensure everything is working perfectly before they leave. Same-day installation is often available.</p>
+              </div>
+            </div>
+
+            <div class="faq-item" data-delay="300">
+              <button class="faq-question" onclick="toggleFAQ(this)">
+                <span>What equipment is included?</span>
+                <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+              </button>
+              <div class="faq-answer">
+                <p>We provide all necessary equipment including a high-performance router/modem, cables, and installation hardware. For cable TV service, we include the set-top box and remote. There's a small monthly equipment rental fee, or you can purchase the equipment outright.</p>
+              </div>
+            </div>
+
+            <div class="faq-item" data-delay="400">
+              <button class="faq-question" onclick="toggleFAQ(this)">
+                <span>Can I bundle internet and cable TV?</span>
+                <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+              </button>
+              <div class="faq-answer">
+                <p>Absolutely! Bundling internet and cable TV saves you money. You'll get a discount on both services, simplified billing with one invoice, and one point of contact for all support needs. Check our pricing page for current bundle offers.</p>
+              </div>
+            </div>
+
+            <div class="faq-item" data-delay="500">
+              <button class="faq-question" onclick="toggleFAQ(this)">
+                <span>How do I get customer support?</span>
+                <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+              </button>
+              <div class="faq-answer">
+                <p>Our support team is available 24/7 via phone, live chat, or email. Call (855) 752-0645 to speak with a real person immediately - no automated systems or long wait times. We also have an online help center with guides and troubleshooting tips.</p>
+              </div>
+            </div>
+
+            <div class="faq-item" data-delay="600">
+              <button class="faq-question" onclick="toggleFAQ(this)">
+                <span>Are there any hidden fees?</span>
+                <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+              </button>
+              <div class="faq-answer">
+                <p>No hidden fees, period. The price you see is the price you pay (plus applicable taxes). We believe in transparent pricing - no surprise charges, no sudden rate increases after promotional periods, no fees for cancellation.</p>
+              </div>
+            </div>
+
+            <div class="faq-item" data-delay="700">
+              <button class="faq-question" onclick="toggleFAQ(this)">
+                <span>Do you offer business internet plans?</span>
+                <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+              </button>
+              <div class="faq-answer">
+                <p>Yes! We offer dedicated business internet with static IP addresses, priority support, and custom bandwidth options. Business plans include higher upload speeds and service level agreements (SLAs) for guaranteed uptime.</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
