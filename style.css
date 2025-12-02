@@ -1,4 +1,4 @@
-/* Zenchmark Theme - Fresh design inspired by "benchmark" wordplay */
+/* Zechmark Cable Theme - Fresh design inspired by "benchmark" wordplay */
 :root{
   --bg:#0b0d12; /* deep navy */
   --bg-2:#0f1320;
@@ -890,7 +890,7 @@ body {
   flex-shrink: 0;
 }
 
-/* ========== WHY CHOOSE ZENCHMARK - MODERN LAYOUT ========== */
+/* ========== WHY CHOOSE ZECHMARK CABLE - MODERN LAYOUT ========== */
 .why-zench-modern {
   padding: 6rem 0;
   background: radial-gradient(ellipse at top, rgba(123, 93, 255, 0.1), transparent 60%);
